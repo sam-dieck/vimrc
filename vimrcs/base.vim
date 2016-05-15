@@ -35,6 +35,7 @@ filetype plugin on
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdcommenter'
 call plug#end()
 
 " NERDTree config
