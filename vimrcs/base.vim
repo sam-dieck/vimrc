@@ -1,5 +1,19 @@
 
 "-------------------------------------------------
+"-- Plugins 
+"-------------------------------------------------
+filetype plugin on
+
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdcommenter'
+Plug 'danilo-augusto/vim-afterglow'
+call plug#end()
+
+" NERDTree config
+let NERDTreeIgnore = ['\.pyc$', '__pycache__']
+
+"-------------------------------------------------
 "-- Editor 
 "-------------------------------------------------
 " Font & syntax
@@ -31,17 +45,3 @@ au FileType vhdl,verilog setlocal ts=2 sw=2 sts=2 et
 " Tags
 set tags=tags
 map <f9> :!/usr/local/bin/ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags ./ $(python -c "import os, sys; print(' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)))")<cr>
-
-"-------------------------------------------------
-"-- Plugins 
-"-------------------------------------------------
-filetype plugin on
-
-call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'scrooloose/nerdcommenter'
-Plug 'danilo-augusto/vim-afterglow'
-call plug#end()
-
-" NERDTree config
-let NERDTreeIgnore = ['\.pyc$', '__pycache__']
