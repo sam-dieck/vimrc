@@ -9,7 +9,16 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'mhinz/vim-signify'
 call plug#end()
+
+" Signify config
+let g:signify_realtime=1
+
+" Airline config
+let g:airline_theme='afterglow'
 
 " NERDTree config
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
@@ -38,6 +47,8 @@ set guioptions-=T
 " Terminal config
 set mouse=a
 set t_Co=256
+" For real time plugins (e.g. signify)
+set updatetime=100
 
 " Tabs and indent
 filetype indent on
