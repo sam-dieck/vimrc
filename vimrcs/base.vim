@@ -12,6 +12,7 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mhinz/vim-signify'
+Plug 'godlygeek/tabular'
 call plug#end()
 
 " Signify config
