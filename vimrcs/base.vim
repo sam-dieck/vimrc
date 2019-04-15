@@ -14,6 +14,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'mhinz/vim-signify'
 Plug 'godlygeek/tabular'
 Plug 'ludovicchabant/vim-gutentags'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+endif
 call plug#end()
 
 " Signify config
@@ -30,6 +33,9 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsEditSplit="vertical"
+
+" Deoplete config
+let g:deoplete#enable_at_startup = 1
 
 "-------------------------------------------------
 "-- Editor 
