@@ -16,6 +16,7 @@ Plug 'godlygeek/tabular'
 Plug 'ludovicchabant/vim-gutentags'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'deoplete-plugins/deoplete-jedi'
 endif
 call plug#end()
 
