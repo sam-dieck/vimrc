@@ -14,6 +14,10 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'mhinz/vim-signify'
 Plug 'godlygeek/tabular'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'tommcdo/vim-exchange'
+Plug 'nelstrom/vim-visual-star-search'
+Plug 'vhda/verilog_systemverilog.vim'
+Plug 'majutsushi/tagbar'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'deoplete-plugins/deoplete-jedi'
