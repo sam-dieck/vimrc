@@ -8,20 +8,21 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'danilo-augusto/vim-afterglow'
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'mhinz/vim-signify'
+"Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
+"Plug 'mhinz/vim-signify'
 Plug 'godlygeek/tabular'
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'tommcdo/vim-exchange'
+"Plug 'ludovicchabant/vim-gutentags'
+"Plug 'tommcdo/vim-exchange'
 Plug 'nelstrom/vim-visual-star-search'
-Plug 'vhda/verilog_systemverilog.vim'
-Plug 'majutsushi/tagbar'
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'deoplete-plugins/deoplete-jedi'
-endif
+"Plug 'vhda/verilog_systemverilog.vim'
+"Plug 'majutsushi/tagbar'
+Plug 'christoomey/vim-tmux-navigator'
+"if has('nvim')
+"  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"  Plug 'deoplete-plugins/deoplete-jedi'
+"endif
 call plug#end()
 
 " Signify config
@@ -40,7 +41,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsEditSplit="vertical"
 
 " Deoplete config
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 
 "-------------------------------------------------
 "-- Editor 
@@ -61,7 +62,7 @@ set guioptions-=T
 set mouse=a
 set t_Co=256
 " For real time plugins (e.g. signify)
-set updatetime=100
+"set updatetime=100
 
 " Tabs and indent
 filetype indent on
@@ -71,7 +72,6 @@ set shiftwidth=4
 set sts=4
 set expandtab
 au FileType html,htmldjango setlocal ts=2 sw=2 sts=2 et
-au FileType vhdl,verilog setlocal ts=2 sw=2 sts=2 et
 
 " Tags
 set tags=tags
