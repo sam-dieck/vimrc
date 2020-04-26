@@ -5,6 +5,7 @@
 filetype plugin on
 
 call plug#begin('~/.vim/plugged')
+Plug 'ycm-core/YouCompleteMe'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'danilo-augusto/vim-afterglow'
